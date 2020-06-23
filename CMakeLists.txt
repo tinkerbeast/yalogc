@@ -23,7 +23,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-#include_directories ("${PROJECT_SOURCE_DIR}/src/")
+message("In cmake main")
 
 if(BUILD_TESTING OR YALOGC_BUILD_TESTING)
     enable_testing()
@@ -35,4 +35,3 @@ if(BUILD_TESTING OR YALOGC_BUILD_TESTING)
 endif(BUILD_TESTING OR YALOGC_BUILD_TESTING)
 
 
-message("In cmake main")

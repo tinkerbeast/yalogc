@@ -1,3 +1,5 @@
+include_directories ("${PROJECT_SOURCE_DIR}/src/")
+
 file(GLOB test-sources "*_test.cpp")
 foreach(file-path ${test-sources})
     string( REPLACE ".cpp" "" file-path-without-ext ${file-path} )
